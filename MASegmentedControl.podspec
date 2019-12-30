@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MASegmentedControl"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Very customizable segmented control for iOS."
 
   spec.description  = "Segmented control that is very customizable and can take any shape and size."
@@ -29,8 +29,7 @@ Pod::Spec.new do |spec|
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
-  spec.source       = { :git => "https://github.com/alokc83/MASegmentedControl.git", :tag => "0.0.2" }
-  #"https://github.com/alokc83/MASegmentedControl.git",  :tag => "#{s.version}" }
+  spec.source       = { :git => "https://github.com/alokc83/MASegmentedControl.git", :tag => "#{spec.version}" }
 
   spec.framework = "UIKit"
 
