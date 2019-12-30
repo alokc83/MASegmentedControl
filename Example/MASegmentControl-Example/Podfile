@@ -6,5 +6,5 @@ target 'MASegmentControl-Example' do
   use_frameworks!
 
   # Pods for MASegmentControl-Example
-	pod "MASegmentedControl" , :path => '../../'
+	pod "MASegmentedControl" #, :path => '../../'
 end
