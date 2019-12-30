@@ -29,8 +29,10 @@ Pod::Spec.new do |spec|
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
-  spec.source       = { :git => "https://github.com/alokc83/MASegmentedControl.git", :tag => "0.0.1" }
+  spec.source       = { :git => "https://github.com/alokc83/MASegmentedControl.git", :tag => "0.0.2" }
+  #"https://github.com/alokc83/MASegmentedControl.git",  :tag => "#{s.version}" }
 
+  spec.framework = "UIKit"
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

@@ -47,7 +47,7 @@ public class MASegmentedControl: UIControl {
     //change this public properties for customization
     
     //MARK: APPEREANCE
-    var selectedSegmentIndex = 0
+    public var selectedSegmentIndex = 0
 
     @IBInspectable public var padding: CGFloat = 0 {
         didSet {

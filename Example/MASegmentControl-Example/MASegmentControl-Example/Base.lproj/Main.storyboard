@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MASegmentControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lxk-CT-gQb">
+                                <rect key="frame" x="17.5" y="8" width="340" height="651"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Various Segmented Control" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FE9-9j-Cgz">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNh-cO-HIf" customClass="MASegmentedControl" customModule="MASegmentedControl">
+                                        <rect key="frame" x="0.0" y="67" width="340" height="47"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cG-Hr-wZ3" customClass="MASegmentedControl" customModule="MASegmentedControl">
+                                        <rect key="frame" x="0.0" y="134" width="340" height="47.5"/>
+                                        <color key="backgroundColor" red="0.25490197539999998" green="0.27450981740000002" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfp-xe-0Vf" customClass="MASegmentedControl" customModule="MASegmentedControl">
+                                        <rect key="frame" x="0.0" y="201.5" width="340" height="47"/>
+                                        <color key="backgroundColor" red="0.25490197539999998" green="0.27450981740000002" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wbh-Kr-74p" customClass="MASegmentedControl" customModule="MASegmentedControl">
+                                        <rect key="frame" x="0.0" y="268.5" width="340" height="47"/>
+                                        <color key="backgroundColor" red="0.25490197539999998" green="0.27450981740000002" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkI-ot-M2u" customClass="MASegmentedControl" customModule="MASegmentedControl">
+                                        <rect key="frame" x="0.0" y="335.5" width="340" height="47"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibZ-He-hV4" customClass="MASegmentedControl" customModule="MASegmentedControl">
+                                        <rect key="frame" x="0.0" y="402.5" width="340" height="47"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Acg-RP-5o9" customClass="MASegmentedControl" customModule="MASegmentedControl">
+                                        <rect key="frame" x="0.0" y="469.5" width="340" height="47.5"/>
+                                        <color key="backgroundColor" red="0.25490197539999998" green="0.27450981740000002" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3I-eb-cbn" customClass="MASegmentedControl" customModule="MASegmentedControl">
+                                        <rect key="frame" x="0.0" y="537" width="340" height="47"/>
+                                        <color key="backgroundColor" red="0.25490197539999998" green="0.27450981740000002" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changrBackgroundColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Xaw-Qq-N5v"/>
+                                        </connections>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="rgu-Yy-AOs">
+                                        <rect key="frame" x="0.0" y="604" width="340" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwT-TK-pxP">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="47"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Update Colors">
+                                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLg-a0-xaC">
+                                                <rect key="frame" x="210" y="0.0" width="130" height="47"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="sWG-ay-gH8"/>
+                                                </constraints>
+                                                <state key="normal" title="Update Text">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Lxk-CT-gQb" secondAttribute="bottom" constant="8" id="GWH-Sz-sJH"/>
+                            <constraint firstItem="Lxk-CT-gQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZTn-uq-dh2"/>
+                            <constraint firstItem="Lxk-CT-gQb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="wi5-dQ-Qm6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="colorsSegmentedControl" destination="D3I-eb-cbn" id="gRW-Sd-EBr"/>
+                        <outlet property="hiddenThumbViewSegmentedControl" destination="ibZ-He-hV4" id="UGg-oe-zmq"/>
+                        <outlet property="iconsSegmentedControl" destination="zfp-xe-0Vf" id="hAd-7h-z04"/>
+                        <outlet property="imagesSegmentedControl" destination="pNh-cO-HIf" id="xl7-NP-V57"/>
+                        <outlet property="linearThumbViewSegmentedControl" destination="Acg-RP-5o9" id="2PI-QV-HL9"/>
+                        <outlet property="textSegmentedControl" destination="6cG-Hr-wZ3" id="c8Z-Qw-24I"/>
+                        <outlet property="textSquareSegmentedControl" destination="Wbh-Kr-74p" id="8vB-kb-mbh"/>
+                        <outlet property="youtubeLikeSegmentedControl" destination="hkI-ot-M2u" id="UKI-T1-IH8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>
