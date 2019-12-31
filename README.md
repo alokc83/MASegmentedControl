@@ -10,7 +10,7 @@ Following examples can give you idea how it can be customized. All this customiz
 
 ### Circular segment:
 ----
-![Circular design](screenShots/1.png) <br>
+![Circular design](screenshots/1.png) <br>
 You would need to provide the image array that can be a array of image litrals or array of UIImage. 
 
 ```
@@ -27,10 +27,11 @@ You would need to provide the image array that can be a array of image litrals o
  											alpha: 1)
 ```
 
-<p><br>
+<p>
+ 
 ### Rounded corner segment: 
 ----
-![Rounded corner design](screenShots/2.png)
+![Rounded corner design](screenshots/2.png)
 
 ```
 didSet {
@@ -57,10 +58,11 @@ didSet {
 }
 ```
 
-<p><br>
+<p>
+ 
 ### Square design with image: 
 ----
-![Square design](screenShots/3.png)
+![Square design](screenshots/3.png)
 
 ```
 
@@ -79,10 +81,11 @@ didSet {
   }
 ```
 
-<p><br>
+<p> 
+ 
 ### Square text design:
 ----
-![Square text design](screenShots/4.png)
+![Square text design](screenshots/4.png)
 
 ```
 didSet {
@@ -99,10 +102,11 @@ didSet {
   }
 ```
 
-<p><br>
+<p>
+ 
 ### Youtube style design:
 ----
-![Circular design](screenShots/5.png)
+![Youtube design](screenShots/5.png)
 
 ```
 didSet {    
@@ -120,10 +124,11 @@ didSet {
   }
 ```
 
-<p><br>
+<p>
+ 
 ### Simple text highlight design:
 -----
-![text highlight design](screenShots/6.png)
+![text highlight design](screenshots/6.png)
 
 ```
 didSet {
@@ -141,10 +146,11 @@ didSet {
 ```
 
  
-<p><br>
+<p>
+ 
 ### Simple text highlight with underbar design:
 -----
-![text with underbar design](screenShots/7.png)
+![text with underbar design](screenshots/7.png)
 
 ```
 didSet {
