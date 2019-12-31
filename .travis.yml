@@ -1,0 +1,87 @@
+# .travis.yml general file
+#https://docs.travis-ci.com/user/customizing-the-build/
+
+language: swift
+osx_image: xcode11.2
+xcode_project: MASegmentedControl.xcodeproj
+xcode_scheme: MASegmentedControl
+xcode_sdk: iphonesimulator13.0
+os: osx
+
+# blocklist
+branches:
+  except:
+  - legacy
+  - experimental
+
+# safelist
+branches:
+  only:
+    - master
+    - develop
+    - /^todo*$/
+    - /^feat*/
+    - /^bug*/
+  
+before_cache: 
+# if needs to clean or something 
+cache:
+  #- bundler
+  #- Carthage
+  # if using cocoapods 
+  #- cocoapods
+podfile: Podfile
+
+
+env: #not environment variables that would in settings of repo
+#this I think are env like: dev, staging, prob
+  #  - CARTHAGE_VERSION="0.30.*"
+  #  - CARTHAGE_DIFF_VERSION="0.1"
+  #  - PROJ_NAME="WeatherInfo.xcodeproj"
+   # - WRK_SPACE="WeatherInfo.xcworkspace"
+git:
+  submodules: false
+  depth: false 
+
+before_install:
+   # - gem install fastlane --no-ri --no-rdoc --no-document
+   # - gem install xcpretty -N
+    #- curl -L -O https://github.com/Carthage/Carthage/releases/download/0.25.0/Carthage.pkg
+    #- sudo installer -pkg Carthage.pkg -target /
+    #- curl -L -O https://github.com/YPlan/CartfileDiff/releases/download/0.1/CartfileDiff.pkg
+    #- sudo installer -pkg CartfileDiff.pkg -target /
+    #- echo $PROJ_NAME
+    #- pod install
+    # if you have submodule in your project 
+    #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    #- git submodule update --init --recursive
+    
+    # Optional 
+    #- brew update
+    #- brew install swiftlint || true
+
+install: true
+before_script:
+#if you have Cocoapods as dependency manager
+  #- gem install cocoapods
+  - gem install colorize
+  - gem install CFPropertyList
+
+script:
+    #- scripts/intelligent-bootstrap
+   # - carthage update --platform ios
+    #- set -o pipefail
+  #  - fastlane scan -s WeatherInfo
+    #If have workaspace, used -workspace option instead -project 
+    - xcodebuild test -enableCodeCoverage YES -project MASegmentedControl.xcodeproj -scheme MASegmentedControl -sdk iphonesimulator12.0 ONLY_ACTIVE_ARCH=NO | xcpretty
+    #- xcodebuild -scheme WeatherInfo -project WeatherInfo.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=11.4' build test | xcpretty 
+after_script:
+    echo "Ater script Phase"
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t 4b846c7d-2663-4b12-bf75-32387c8ecd94
+after_failure:
+# Notify people 
+before_deploy:
+deploy:
+    #skip_cleanup: false
+after_deploy:
