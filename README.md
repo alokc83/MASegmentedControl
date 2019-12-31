@@ -10,7 +10,7 @@ Following examples can give you idea how it can be customized. All this customiz
 
 ### Circular segment:
 ----
-![Circular design](screenShots/1.png) <br>
+![Circular design](screenshots/1.png) <br>
 You would need to provide the image array that can be a array of image litrals or array of UIImage. 
 
 ```
@@ -29,8 +29,8 @@ You would need to provide the image array that can be a array of image litrals o
 
 <p><br>
 ### Rounded corner segment: 
-----
-![Rounded corner design](screenShots/2.png)
+---- <br>
+![Rounded corner design](screenshots/2.png)
 
 ```
 didSet {
@@ -59,8 +59,8 @@ didSet {
 
 <p><br>
 ### Square design with image: 
-----
-![Square design](screenShots/3.png)
+---- <br>
+![Square design](screenshots/3.png)
 
 ```
 
@@ -81,8 +81,8 @@ didSet {
 
 <p><br>
 ### Square text design:
-----
-![Square text design](screenShots/4.png)
+---- <br>
+![Square text design](screenshots/4.png)
 
 ```
 didSet {
@@ -122,8 +122,8 @@ didSet {
 
 <p><br>
 ### Simple text highlight design:
------
-![text highlight design](screenShots/6.png)
+----- <br>
+![text highlight design](screenshots/6.png)
 
 ```
 didSet {
@@ -143,8 +143,8 @@ didSet {
  
 <p><br>
 ### Simple text highlight with underbar design:
------
-![text with underbar design](screenShots/7.png)
+----- <br>
+![text with underbar design](screenshots/7.png)
 
 ```
 didSet {
