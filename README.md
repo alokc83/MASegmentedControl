@@ -27,9 +27,10 @@ You would need to provide the image array that can be a array of image litrals o
  											alpha: 1)
 ```
 
-<p><br>
+<p>
+ 
 ### Rounded corner segment: 
----- <br>
+----
 ![Rounded corner design](screenshots/2.png)
 
 ```
@@ -57,9 +58,10 @@ didSet {
 }
 ```
 
-<p><br>
+<p>
+ 
 ### Square design with image: 
----- <br>
+----
 ![Square design](screenshots/3.png)
 
 ```
@@ -79,9 +81,10 @@ didSet {
   }
 ```
 
-<p><br>
+<p> 
+ 
 ### Square text design:
----- <br>
+----
 ![Square text design](screenshots/4.png)
 
 ```
@@ -99,10 +102,11 @@ didSet {
   }
 ```
 
-<p><br>
+<p>
+ 
 ### Youtube style design:
 ----
-![Circular design](screenShots/5.png)
+![Youtube design](screenShots/5.png)
 
 ```
 didSet {    
@@ -120,7 +124,8 @@ didSet {
   }
 ```
 
-<p><br>
+<p>
+ 
 ### Simple text highlight design:
 ----- <br>
 ![text highlight design](screenshots/6.png)
@@ -141,7 +146,8 @@ didSet {
 ```
 
  
-<p><br>
+<p>
+ 
 ### Simple text highlight with underbar design:
 ----- <br>
 ![text with underbar design](screenshots/7.png)
