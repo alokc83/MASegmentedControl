@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     private var colorsViewModel: GenericViewModel<UIColor>?
     
     /**
-            When control is having images
+            Circular design
      */
     @IBOutlet weak var imagesSegmentedControl: MASegmentedControl! {
         didSet {
@@ -35,7 +35,6 @@ class ViewController: UIViewController {
      */
     @IBOutlet weak var textSegmentedControl: MASegmentedControl! {
         didSet {
-            
             //Set this booleans to adapt control
             textSegmentedControl.itemsWithText = true
             textSegmentedControl.fillEqually = true
