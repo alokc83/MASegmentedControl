@@ -127,7 +127,7 @@ didSet {
 <p>
  
 ### Simple text highlight design:
------ <br>
+-----
 ![text highlight design](screenshots/6.png)
 
 ```
@@ -149,7 +149,7 @@ didSet {
 <p>
  
 ### Simple text highlight with underbar design:
------ <br>
+-----
 ![text with underbar design](screenshots/7.png)
 
 ```
