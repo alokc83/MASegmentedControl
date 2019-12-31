@@ -2,7 +2,7 @@
 #https://docs.travis-ci.com/user/customizing-the-build/
 
 language: swift
-osx_image: xcode11.2
+osx_image: xcode11.3
 xcode_project: MASegmentedControl.xcodeproj
 xcode_scheme: MASegmentedControl
 xcode_sdk: iphonesimulator13.0
@@ -73,7 +73,7 @@ script:
     #- set -o pipefail
   #  - fastlane scan -s WeatherInfo
     #If have workaspace, used -workspace option instead -project 
-    - xcodebuild test -enableCodeCoverage YES -project MASegmentedControl.xcodeproj -scheme MASegmentedControl ONLY_ACTIVE_ARCH=NO | xcpretty
+    - xcodebuild test -enableCodeCoverage YES -project MASegmentedControl.xcodeproj -scheme MASegmentedControl-sdk iphonesimulator13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
     #- xcodebuild -scheme WeatherInfo -project WeatherInfo.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=11.4' build test | xcpretty 
 after_script:
     echo "Ater script Phase"
