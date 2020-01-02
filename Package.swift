@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(name: "MASegmentedControl",
-                      platforms: [.iOS(.v122)],
+                      platforms: [.iOS(.v10)],
                       products: [.library(name: "MASegmentedControl",
                                           targets: ["MASegmentedControl"])],
                       targets: [.target(name: "MASegmentedControl",
