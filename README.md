@@ -1,12 +1,40 @@
 # MASegmentedControl
 ![Language](https://img.shields.io/badge/Language-Swift%205-orange.svg)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/alokc83/WeatherInfo/graphs/commit-activity)
+![cocoapods](https://img.shields.io/badge/cocoapods-0.0.3-red)
+![carthage](https://img.shields.io/badge/Carthage-0.0.3-orange) <br>
 [![GitHub issues](https://img.shields.io/github/issues/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/issues)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![GitHub license](https://img.shields.io/github/license/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/blob/master/LICENSE)
 
 Super customizable Segmented Control for iOS. 
 Following examples can give you idea how it can be customized. All this customization can be written anywhere before rendering of the control. Most desirable place is `didSet block.`
+
+### Integrating with cococapods:
+----
+##### Integrating latest version
+```
+pod 'MASegmentedControl'
+
+```
+##### Integrating specific version
+```
+pods 'MASegmentedControl', '~> 0.0.3'
+
+```
+
+### Integrating with Carthage:
+----
+##### Integrating latest version
+```
+github "alokc83/MASegmentedControl"
+
+```
+##### Integrating specific version
+```
+github "alokc83/MASegmentedControl" ~> 0.0.3
+
+```
 
 ### Circular segment:
 ----
