@@ -134,7 +134,7 @@ didSet {
  
 ### Youtube style design:
 ----
-![Youtube design](screenShots/5.png)
+![Youtube design](screenshots/5.png)
 
 ```
 didSet {    
