@@ -245,7 +245,9 @@ public class MASegmentedControl: UIControl {
         
         layer.cornerRadius = roundedControl ? frame.height / 2 : 1.0
         self.backgroundColor = self.segmentedBackGroundColor
-        self.layer.borderColor = self.segmentedBackGroundColor.cgColor
+        self.layer.borderWidth = self.customBorderWidth
+        self.layer.borderColor = self.customBorderColor.cgColor
+
         setThumbView()
         //if fillEqually is not true the layout is not in stackview and its set based on frames
         guard !fillEqually else { return }
