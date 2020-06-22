@@ -8,7 +8,22 @@
 [![GitHub license](https://img.shields.io/github/license/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/blob/master/LICENSE)
 
 Super customizable Segmented Control for iOS. 
-Following examples can give you idea how it can be customized. All this customization can be written anywhere before rendering of the control. Most desirable place is `didSet block.`
+Following examples can give you idea how it can be customized. All this customization can be written anywhere before rendering of the control. Most desirable place is `didSet block.` 
+
+For example: 
+
+```
+@IBOutlet var imagesSegmentedControl: MASegmentedControl! { 
+	didSet { 
+		imagesSegmentedControl.fillEqually = false
+ 		imagesSegmentedControl.buttonsWithDynamicImages = true
+ 		imagesSegmentedControl.roundedControl = true
+    } 
+}
+
+```
+
+
 
 ### Integrating with cococapods:
 ----
@@ -19,7 +34,7 @@ pod 'MASegmentedControl'
 ```
 ##### Integrating specific version
 ```
-pods 'MASegmentedControl', '~> 0.0.3'
+pods 'MASegmentedControl', '~> 0.0.5'
 
 ```
 
