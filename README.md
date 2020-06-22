@@ -1,8 +1,8 @@
 # MASegmentedControl
 ![Language](https://img.shields.io/badge/Language-Swift%205-orange.svg)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/alokc83/WeatherInfo/graphs/commit-activity)
-![cocoapods](https://img.shields.io/badge/cocoapods-0.0.3-red)
-![carthage](https://img.shields.io/badge/Carthage-0.0.3-orange) <br>
+![cocoapods](https://img.shields.io/badge/cocoapods-0.0.5-red)
+![carthage](https://img.shields.io/badge/Carthage-0.0.5-orange) <br>
 [![GitHub issues](https://img.shields.io/github/issues/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/issues)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![GitHub license](https://img.shields.io/github/license/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/blob/master/LICENSE)
