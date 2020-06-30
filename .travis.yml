@@ -9,14 +9,14 @@ xcode_sdk: iphonesimulator13.0
 os: osx
 
 # blocklist
-branches:
-  except:
-  - legacy
-  - experimental
+#branches:
+# except:
+    #    - legacy
+      #  - experimental
 
 # safelist
 branches:
-  only:
+    only:
     - master
     - develop
     - /^todo*$/

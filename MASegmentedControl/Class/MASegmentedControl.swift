@@ -187,12 +187,12 @@ public class MASegmentedControl: UIControl {
     // MARK: SET SEGMENTED CONTROL DATASOURCES
     
     public func setSegmentedWith<T>(items: T) {
-        if items is [String] {
-            self.buttonTitles = items as! [String]
-        } else if items is [UIImage] {
-            self.buttonImages = items as! [UIImage]
-        } else if items is [UIColor] {
-            self.buttonColors = items as! [UIColor]
+        if let collection = items as? [String] {
+            self.buttonTitles = collection
+        } else if let collection = items as? [UIImage] {
+            self.buttonImages = collection
+        } else if let collection = items as? [UIColor] {
+            self.buttonColors = collection
         }
     }
     
@@ -237,7 +237,7 @@ public class MASegmentedControl: UIControl {
         if fillEqually {
             self.layoutButtonsOnStackView()
         } else {
-            let _ = self.buttons.map { addSubview($0) }
+            _ = self.buttons.map { addSubview($0) }
         }
     }
     
@@ -325,8 +325,8 @@ public class MASegmentedControl: UIControl {
     
     //called if boolean for text is true
     private func setButtonsWithText() {
-        
-        guard self.buttonTitles.count != 0 else { return }
+
+        guard !self.buttonTitles.isEmpty else { return }
         
         for buttonTitle in buttonTitles {
             let button = UIButton(type: .system)
@@ -343,7 +343,7 @@ public class MASegmentedControl: UIControl {
     //called if boolean for text is false
     private func setButtonsWithImages() {
         
-        guard self.buttonImages.count != 0 else { return }
+        guard !self.buttonImages.isEmpty else { return }
 
         for buttonImage in self.buttonImages {
             
@@ -367,7 +367,8 @@ public class MASegmentedControl: UIControl {
     //called if boolean for dynamic colors in buttons is true
     private func setButtonsWithDynamicColors() {
         
-        guard self.buttonColors.count != 0 else { return }
+        guard !self.buttonColors.isEmpty else { return }
+        
         for btnColor in self.buttonColors {
             let button = UIButton(type: .system)
             button.tintColor = btnColor
