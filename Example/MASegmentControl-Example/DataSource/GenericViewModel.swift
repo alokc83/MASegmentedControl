@@ -8,7 +8,7 @@
 
 import Foundation
 
-//MARK: Generic viewmodel that accepts an array of T
+// MARK: Generic viewmodel that accepts an array of T
 //Main responsability is to return the element selected at index
 struct GenericViewModel<T>: IndexReturnable {
 
