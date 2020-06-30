@@ -9,15 +9,20 @@
 import Foundation
 import UIKit
 
-//MARK: ACTIONS WHEN ITEM IS SELECTED IT HANDLES: ACTION - APPEREANCE - TRANSLATION
+// MARK: ACTIONS WHEN ITEM IS SELECTED IT HANDLES: ACTION - APPEREANCE - TRANSLATION
 extension MASegmentedControl {
     
-    //MARK: MAIN ACTION: .valueChanged
+    // MARK: MAIN ACTION: .valueChanged
+    
+    /// This method handle the value change event
     internal func performAction() {
         sendActions(for: .valueChanged)
     }
     
-    //MARK: CHANGING APPEREANCE OF BUTTON ON TAP
+    // MARK: CHANGING APPEREANCE OF BUTTON ON TAP
+    
+    /// Button tap event on segmented control
+    /// - Parameter button: button at the index that was tapped
     @objc internal func buttonTapped(button: UIButton) {
         
         for (btnIndex, btn) in self.buttons.enumerated() {
@@ -42,7 +47,7 @@ extension MASegmentedControl {
         self.performAction()
     }
     
-    //MARK: TRANSLATION OF THUMBVIEW WITH ANIMATION ON TAP
+    // MARK: TRANSLATION OF THUMBVIEW WITH ANIMATION ON TAP
     
     //Movement of thumbview if fillEqually = true
     private func moveThumbView(at index: Int) {

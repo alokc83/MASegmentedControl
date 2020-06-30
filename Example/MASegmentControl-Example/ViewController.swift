@@ -150,7 +150,7 @@ class ViewController: UIViewController {
         }
     }
     
-    //MARK 8
+    // MARK: Type 8 
     @IBOutlet weak var colorsSegmentedControl: MASegmentedControl! {
         didSet {
             

@@ -6,7 +6,6 @@
 //  Copyright © 2019 Alok Choudhary. All rights reserved.
 //
 
-
 import Foundation
 import UIKit
 
@@ -15,6 +14,8 @@ public class MASegmentedControl: UIControl {
     
     //static properties
     //Set to 10 by default, if setted to 0 the image will be same size at button
+    
+    /// Image inset for icon image on segmented control
     static let imageInsets: UIEdgeInsets = UIEdgeInsets.init(top: 10, left: 10, bottom: 10, right: 10)
     static let bottomLineThumbViewHeight: CGFloat = 5.0
     
@@ -46,7 +47,7 @@ public class MASegmentedControl: UIControl {
     //Public properties customize segmented control
     //change this public properties for customization
     
-    //MARK: APPEREANCE
+    // MARK: APPEREANCE
     public var selectedSegmentIndex = 0
 
     @IBInspectable public var padding: CGFloat = 0 {
@@ -89,7 +90,7 @@ public class MASegmentedControl: UIControl {
         }
     }
     
-    //MARK: SEGMENTED CONTROL WITH TEXT
+    // MARK: SEGMENTED CONTROL WITH TEXT
     @IBInspectable public var textColor: UIColor = .lightGray {
         didSet {
             updateView()
@@ -102,13 +103,14 @@ public class MASegmentedControl: UIControl {
         }
     }
     
+    /// Font for title in segmented control
     public var titlesFont: UIFont? {
         didSet {
             updateView()
         }
     }
     
-    //MARK: SEGMENTED CONTROL WITH IMAGES
+    // MARK: SEGMENTED CONTROL WITH IMAGES
     //if images with change on it's tint color on selection
     @IBInspectable public var buttonColorForNormal: UIColor = .lightGray {
         didSet {
@@ -122,7 +124,7 @@ public class MASegmentedControl: UIControl {
         }
     }
 
-    //MARK: SEGMENTED CONTROL WITH COLORS
+    // MARK: SEGMENTED CONTROL WITH COLORS
 
     //this is just a placeholder it can be any type of images passed as parameter it will "hold" the color and present it
     @IBInspectable public var imageForItemWithDynamicColors: UIImage? {
@@ -131,7 +133,7 @@ public class MASegmentedControl: UIControl {
         }
     }
     
-    //MARK: MAIN BOOLEANS FOR SET UICONTROL
+    // MARK: MAIN BOOLEANS FOR SET UICONTROL
     //main properties for customize segmented, if items contains text is recommended to set the fillEqually to true
     
     //A) Most important booleans are fillEqually - itemsWithText - roundedControl - bottomLineThumbView - thumbViewHidden
@@ -182,19 +184,19 @@ public class MASegmentedControl: UIControl {
         }
     }
     
-    //MARK: SET SEGMENTED CONTROL DATASOURCES
+    // MARK: SET SEGMENTED CONTROL DATASOURCES
     
     public func setSegmentedWith<T>(items: T) {
-        if items is [String] {
-            self.buttonTitles = items as! [String]
-        } else if items is [UIImage] {
-            self.buttonImages = items as! [UIImage]
-        } else if items is [UIColor] {
-            self.buttonColors = items as! [UIColor]
+        if let collection = items as? [String] {
+            self.buttonTitles = collection
+        } else if let collection = items as? [UIImage] {
+            self.buttonImages = collection
+        } else if let collection = items as? [UIColor] {
+            self.buttonColors = collection
         }
     }
     
-    //MARK: GENERIC METHOD FOR UPDATE DATASOURCES
+    // MARK: GENERIC METHOD FOR UPDATE DATASOURCES
     public func updateSegmentedWith<T>(items: T) {
         
         self.buttonTitles.removeAll()
@@ -213,7 +215,7 @@ public class MASegmentedControl: UIControl {
         self.performAction()
     }
     
-    //MARK: METHODS THAT WILL CREATE THE CONTROL BASED ON CUSTOMIZATION OF PROPERTIES
+    // MARK: METHODS THAT WILL CREATE THE CONTROL BASED ON CUSTOMIZATION OF PROPERTIES
     
     //1 reset all views to clean state
     private func resetViews() {
@@ -235,7 +237,7 @@ public class MASegmentedControl: UIControl {
         if fillEqually {
             self.layoutButtonsOnStackView()
         } else {
-            let _ = self.buttons.map { addSubview($0) }
+            _ = self.buttons.map { addSubview($0) }
         }
     }
     
@@ -256,7 +258,7 @@ public class MASegmentedControl: UIControl {
         }
     }
     
-    //MARK: THUMBVIEW LAYOUT
+    // MARK: THUMBVIEW LAYOUT
     private func setThumbView() {
 
         let thumbViewHeight = bottomLineThumbView ? MASegmentedControl.bottomLineThumbViewHeight : bounds.height - padding * 2
@@ -301,7 +303,7 @@ public class MASegmentedControl: UIControl {
         //set first and last elements origin x
         let firstelementPositionX = self.padding
         let lastElemetPositionX = bounds.width - thumbView.frame.width - padding
-        //MARK Start here to modify the items from the second until the one before the last
+        // MARK: Start here to modify the items from the second until the one before the last
         //the area where the thumbView is contained
         let thumbViewAreaTotalWidth = bounds.width / CGFloat(buttons.count)
         //startingPoint based on x position multiplier
@@ -323,8 +325,8 @@ public class MASegmentedControl: UIControl {
     
     //called if boolean for text is true
     private func setButtonsWithText() {
-        
-        guard self.buttonTitles.count != 0 else { return }
+
+        guard !self.buttonTitles.isEmpty else { return }
         
         for buttonTitle in buttonTitles {
             let button = UIButton(type: .system)
@@ -341,7 +343,7 @@ public class MASegmentedControl: UIControl {
     //called if boolean for text is false
     private func setButtonsWithImages() {
         
-        guard self.buttonImages.count != 0 else { return }
+        guard !self.buttonImages.isEmpty else { return }
 
         for buttonImage in self.buttonImages {
             
@@ -365,7 +367,8 @@ public class MASegmentedControl: UIControl {
     //called if boolean for dynamic colors in buttons is true
     private func setButtonsWithDynamicColors() {
         
-        guard self.buttonColors.count != 0 else { return }
+        guard !self.buttonColors.isEmpty else { return }
+        
         for btnColor in self.buttonColors {
             let button = UIButton(type: .system)
             button.tintColor = btnColor
@@ -378,4 +381,3 @@ public class MASegmentedControl: UIControl {
         }
     }
 }
-
