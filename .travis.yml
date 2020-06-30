@@ -22,16 +22,15 @@ branches:
     - /^todo*$/
     - /^feat*/
     - /^bug*/
-  
-before_cache: 
-# if needs to clean or something 
+
+before_cache:
+# if needs to clean or something
 cache:
   #- bundler
   #- Carthage
-  # if using cocoapods 
+  # if using cocoapods
   #- cocoapods
 podfile: Podfile
-
 
 env: #not environment variables that would in settings of repo
 #this I think are env like: dev, staging, prob
@@ -41,7 +40,7 @@ env: #not environment variables that would in settings of repo
    # - WRK_SPACE="WeatherInfo.xcworkspace"
 git:
   submodules: false
-  depth: false 
+  depth: false
 
 before_install:
    # - gem install fastlane --no-ri --no-rdoc --no-document
@@ -52,11 +51,11 @@ before_install:
     #- sudo installer -pkg CartfileDiff.pkg -target /
     #- echo $PROJ_NAME
     #- pod install
-    # if you have submodule in your project 
+    # if you have submodule in your project
     #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
     #- git submodule update --init --recursive
-    
-    # Optional 
+
+    # Optional
     #- brew update
     #- brew install swiftlint || true
 
@@ -72,15 +71,15 @@ script:
    # - carthage update --platform ios
     #- set -o pipefail
   #  - fastlane scan -s WeatherInfo
-    #If have workaspace, used -workspace option instead -project 
+    #If have workaspace, used -workspace option instead -project
     - xcodebuild test -enableCodeCoverage YES -project MASegmentedControl.xcodeproj -scheme MASegmentedControl-sdk iphonesimulator13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
-    #- xcodebuild -scheme WeatherInfo -project WeatherInfo.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=11.4' build test | xcpretty 
+    #- xcodebuild -scheme WeatherInfo -project WeatherInfo.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=11.4' build test | xcpretty
 after_script:
     echo "Ater script Phase"
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 4b846c7d-2663-4b12-bf75-32387c8ecd94
 after_failure:
-# Notify people 
+# Notify people
 before_deploy:
 deploy:
     #skip_cleanup: false
