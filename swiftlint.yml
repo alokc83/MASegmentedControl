@@ -1,0 +1,73 @@
+disabled_rules: # rule identifiers to exclude from running
+  - colon
+  - comma
+  - nesting
+  - control_statement
+  - trailing_whitespace
+  - statement_position
+  - redundant_optional_initialization
+  - alphanumeric
+  - switch_case_alignment #newly added
+  - cyclomatic_complexity
+  - identifier_name
+  - file_length
+  - function_body_length
+  - type_name
+  - empty_count
+  - function_parameter_count
+
+opt_in_rules: # some rules are only opt-in
+  - syntactic_sugar
+  - empty_enum_arguments
+  - redundant_discardable_let
+  - vertical_whitespace
+  - force_cast
+  - force_unwrapping
+
+
+# Find all the available rules by running:
+# swiftlint rules
+included: # paths to include during linting. `--path` is ignored if present.
+  - MASegmentedControl
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+shorthand_operator: warning
+force_cast: warning # implicitly
+force_unwrapping: warning
+force_try:
+  severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length: 300
+# they can set both implicitly with an array
+type_body_length:
+  - 300 # warning
+  #- 400 # error
+# or they can set both explicitly
+#file_length:
+#  warning: 500
+ # error: 1200
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 2 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded: iPhone # excluded via string
+#identifier_name:
+  #min_length: 2 # only min_length
+  #excluded: # excluded via string array
+    #- id
+function_body_length: 75
+cyclomatic_complexity:
+  warning: 15
+ # error: 20
+  ignores_case_statements: true
+large_tuple:
+ warning: 3
+ #error: 4
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)

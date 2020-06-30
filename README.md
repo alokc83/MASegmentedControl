@@ -7,6 +7,7 @@
  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
  [![GitHub license](https://img.shields.io/github/license/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/blob/master/LICENSE)
 
+
 Super customizable Segmented Control for iOS. 
 Following examples can give you idea how it can be customized. All this customization can be written anywhere before rendering of the control. Most desirable place is `didSet block.` 
 
