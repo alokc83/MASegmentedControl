@@ -1,4 +1,4 @@
-# MASegmentedControl [![Build Status](https://travis-ci.org/alokc83/MASegmentedControl.svg?branch=master)](https://travis-ci.org/alokc83/MASegmentedControl)
+# MASegmentedControl [![Build Status](https://travis-ci.org/alokc83/MASegmentedControl.svg?branch=master)](https://travis-ci.org/alokc83/MASegmentedControl) [![GitHub forks](https://img.shields.io/github/forks/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/network)
 ![Language](https://img.shields.io/badge/Language-Swift%205-orange.svg)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/alokc83/WeatherInfo/graphs/commit-activity)
 ![cocoapods](https://img.shields.io/badge/cocoapods-0.0.5-red)
