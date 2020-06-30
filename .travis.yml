@@ -85,3 +85,4 @@ before_deploy:
 deploy:
     #skip_cleanup: false
 after_deploy:
+- bash <(curl -s https://codecov.io/bash)
