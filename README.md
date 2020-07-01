@@ -49,7 +49,7 @@ github "alokc83/MASegmentedControl"
 ```
 ##### Integrating specific version
 ```
-github "alokc83/MASegmentedControl" ~> 0.0.3
+github "alokc83/MASegmentedControl" ~> 0.0.5
 
 ```
 
