@@ -211,6 +211,8 @@ didSet {
          linearThumbViewSegmentedControl.thumbViewColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)     
   }
 ```
+------------------------------------------
+[![HitCount](http://hits.dwyl.com/alokc83/MASegmentedControl.svg)](http://hits.dwyl.com/alokc83/MASegmentedControl)
 
 [![Analytics](https://ga-beacon.appspot.com/UA-61420617-3/)](https://github.com/alokc83/MASegmentedControl/)
 
