@@ -24,7 +24,7 @@ class ContentDataSource {
     }
     
     static func textItems() -> [String] {
-        return ["Option 1", "Option2"]
+        return ["Option 1", "Option2", "Options3", "Options4"]
     }
     
     static func options() -> [String] {

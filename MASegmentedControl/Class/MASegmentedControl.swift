@@ -49,6 +49,11 @@ public class MASegmentedControl: UIControl {
     
     // MARK: APPEREANCE
     public var selectedSegmentIndex = 0
+    {
+        didSet {
+            self.setSelectedIndex(to: selectedSegmentIndex)
+        }
+    }
 
     @IBInspectable public var padding: CGFloat = 0 {
         didSet {
