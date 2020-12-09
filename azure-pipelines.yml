@@ -16,5 +16,5 @@ steps:
     scheme: ''
     sdk: 'iphoneos'
     configuration: 'Release'
-    xcWorkspacePath: '**/MASegmentedControl.xcodeproj/project.xcworkspace'
-    xcodeVersion: 'default' # Options: 8, 9, 10, 11, default, specifyPath
+    xcWorkspacePath: 'MASegmentedControl.xcodeproj/project.xcworkspace'
+    xcodeVersion: '11' # Options: 8, 9, 10, 11, default, specifyPath
