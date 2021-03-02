@@ -1,16 +1,16 @@
 PODS:
-  - MASegmentedControl (0.0.2)
+  - MASegmentedControl (0.0.5)
 
 DEPENDENCIES:
-  - MASegmentedControl (from `../../`)
+  - MASegmentedControl (from `../`)
 
 EXTERNAL SOURCES:
   MASegmentedControl:
-    :path: "../../"
+    :path: "../"
 
 SPEC CHECKSUMS:
-  MASegmentedControl: 08f924c8004db4acc2343fa67a90f953ad5330b0
+  MASegmentedControl: 9b58f9ba3a562a739b63b29e4ca2b9dc4d9c62cb
 
-PODFILE CHECKSUM: 1aa77b93663ad88058eed77e6551a45bb6bd5aca
+PODFILE CHECKSUM: e01e66bfc5374d99551294fce5328e9b4df801a7
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

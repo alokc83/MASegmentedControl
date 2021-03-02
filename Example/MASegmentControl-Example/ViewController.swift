@@ -187,6 +187,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func updateSelectedIndex(_ sender: UIButton) {
+        hiddenThumbViewSegmentedControl.selectedSegmentIndex = 3
+    }
+    
 }
 
