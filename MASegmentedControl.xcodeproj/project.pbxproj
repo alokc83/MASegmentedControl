@@ -63,6 +63,7 @@
 				BBCD646423B9D0DB00688D22 /* MASegmentedControl */,
 				BBCD646F23B9D0DC00688D22 /* MASegmentedControlTests */,
 				BBCD646323B9D0DB00688D22 /* Products */,
+				CF89BC37252A2D17006FB3F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +102,13 @@
 				BBCD64CA23B9D8ED00688D22 /* MASegmentedControl+actions.swift */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		CF89BC37252A2D17006FB3F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +168,7 @@
 		BBCD645923B9D0DB00688D22 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Alok Choudhary";
 				TargetAttributes = {
@@ -226,7 +234,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --config ./swiftlint.yml\n#swiftlint --config ./swiftlint.yml &>.swiftlintstat\n#cat .swiftlintstat| grep \"Done\" > swiftlint.stat\n#rm -f .swiftlintstat\nelse\necho \"Error: SwiftLint not installed!!! Read & download from https://github.com/realm/SwiftLint\"\nexit -1\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --config ./swiftlint.yml\nelse\necho \"Error: SwiftLint not installed!!! Read & download from https://github.com/realm/SwiftLint\"\nexit -1\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
