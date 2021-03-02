@@ -1,5 +1,6 @@
+
 # MASegmentedControl [![Build Status](https://travis-ci.org/alokc83/MASegmentedControl.svg?branch=master)](https://travis-ci.org/alokc83/MASegmentedControl) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/alokc83/WeatherInfo/graphs/commit-activity) 
- 
+
  ![Language](https://img.shields.io/badge/Language-Swift%205-orange.svg)
  ![cocoapods](https://img.shields.io/badge/cocoapods-0.0.5-red)
  ![carthage](https://img.shields.io/badge/Carthage-0.0.5-orange) <br>
@@ -7,6 +8,7 @@
  [![GitHub issues](https://img.shields.io/github/issues/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/issues)
  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
  [![GitHub license](https://img.shields.io/github/license/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/blob/master/LICENSE)
+
 
 ### Code Quality:
 | Service  | Grading |
@@ -55,7 +57,7 @@ github "alokc83/MASegmentedControl"
 ```
 ##### Integrating specific version
 ```
-github "alokc83/MASegmentedControl" ~> 0.0.3
+github "alokc83/MASegmentedControl" ~> 0.0.5
 
 ```
 
@@ -217,7 +219,11 @@ didSet {
          linearThumbViewSegmentedControl.thumbViewColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)     
   }
 ```
+------------------------------------------
+[![HitCount](http://hits.dwyl.com/alokc83/MASegmentedControl.svg)](http://hits.dwyl.com/alokc83/MASegmentedControl)
 
+<!--
 [![Analytics](https://ga-beacon.appspot.com/UA-61420617-3/)](https://github.com/alokc83/MASegmentedControl/)
+-->
 
 <img src="https://api.segment.io/v1/pixel/track?data=ewogICJ3cml0ZUtleSI6ICJlUXhIQm1ucDBHZFpLM1I2S1VHc01EWUJ1YUJ5RGlhSiIsCiAgInVzZXJJZCI6ICJnaXRodWJfdXNlciIsCiAgInJlcG8iOiAiTUFTZWdtZW50ZWRDb250cm9sIiwKICAiZXZlbnQiOiAicGFnZSB2aXNpdCIsCiAgInByb3BlcnRpZXMiOiB7CiAgICAid2Vic2l0ZSI6ICJodHRwczovL2dpdGh1Yi5jb20vYWxva2M4My9NQVNlZ21lbnRlZENvbnRyb2wiCiAgfQp9">
