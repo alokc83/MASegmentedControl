@@ -168,9 +168,18 @@ public class MASegmentedControl: UIControl {
         }
     }
     
-    //B) This makes changes on buttons with images and only if itemsWithText = false
-    //if buttons have dynamicImages means if we want to show the image without changing its tintcolor
-    //Setting this to true will make not buttonColorForNormal and buttonColorForSelected not been called
+    /**
+     This property changes on buttons with images and only if itemsWithText = false
+     if buttons have dynamicImages means if we want to show the image without changing its tintcolor.
+     Setting property to true will call buttonColorForNormal and buttonColorForSelected.
+     default value is `false`.
+     - Parameters:
+        - None
+     ### Usage: ###
+     ````
+     control.buttonsWithDynamicImages = true
+     ````
+     */
     @IBInspectable public var buttonsWithDynamicImages: Bool = false {
         didSet {
             updateView()
@@ -347,17 +356,17 @@ public class MASegmentedControl: UIControl {
 
         for buttonImage in self.buttonImages {
             
-            var button: UIButton?
+            var button: UIButton
             if !buttonsWithDynamicImages {
                 button = UIButton(type: .system)
-                button?.tintColor = buttonColorForNormal
+                button.tintColor = buttonColorForNormal
             } else {
                 button = UIButton(type: .custom)
             }
-            button?.setImage(buttonImage, for: .normal)
-            button?.imageEdgeInsets = MASegmentedControl.imageInsets
-            button?.addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
-            buttons.append(button!)
+            button.setImage(buttonImage, for: .normal)
+            button.imageEdgeInsets = MASegmentedControl.imageInsets
+            button.addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
+            buttons.append(button)
         }
         if !buttonsWithDynamicImages {
             buttons[selectedSegmentIndex].tintColor = buttonColorForSelected
