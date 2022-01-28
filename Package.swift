@@ -6,5 +6,5 @@ let package = Package(name: "MASegmentedControl",
                       products: [.library(name: "MASegmentedControl",
                                           targets: ["MASegmentedControl"])],
                       targets: [.target(name: "MASegmentedControl",
-                                        path: "MASegmentedControl")],
+                                        path: "MASegmentedControl/Class")],
                       swiftLanguageVersions: [.v4, .v4_2, .v5])
