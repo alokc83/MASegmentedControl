@@ -4,6 +4,7 @@
  ![Language](https://img.shields.io/badge/Language-Swift%205-orange.svg)
  ![cocoapods](https://img.shields.io/badge/cocoapods-0.0.5-red)
  ![carthage](https://img.shields.io/badge/Carthage-0.0.5-orange) <br>
+ ![SPM](https://img.shields.io/badge/SPM-0.0.6-orange) <br>
 [![GitHub forks](https://img.shields.io/github/forks/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/network)
  [![GitHub issues](https://img.shields.io/github/issues/alokc83/MASegmentedControl)](https://github.com/alokc83/MASegmentedControl/issues)
  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
