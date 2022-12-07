@@ -283,6 +283,26 @@ public class MASegmentedControl: UIControl {
         thumbView.frame = CGRect(x: thumbViewPositionX, y: thumbViewPositionY, width: thumbViewWidth, height: thumbViewHeight)
         thumbView.layer.cornerRadius = roundedControl ? thumbViewHeight / 2 : 1.0
         thumbView.backgroundColor = thumbViewColor
+        
+        // To have thumbView on the active bouton when app is in background
+        for (btnIndex, btn) in self.buttons.enumerated() {
+            
+            btn.setTitleColor(textColor, for: .normal)
+            if !itemsWithDynamicColor {
+                if !buttonsWithDynamicImages {
+                    btn.tintColor = buttonColorForNormal
+                }
+            }
+            if btnIndex == selectedSegmentIndex {
+                fillEqually ?  moveThumbView(at: btnIndex) : moveThumbViewFillEquallyFalse(at: btnIndex)
+                btn.setTitleColor(selectedTextColor, for: .normal)
+                if !itemsWithDynamicColor {
+                    if !buttonsWithDynamicImages {
+                        btn.tintColor = buttonColorForSelected
+                    }
+                }
+            }
+        }
     }
     
     //4 MARK: BUTTONS LAYOUTS
