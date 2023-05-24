@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MASegmentedControl"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "Very customizable segmented control for iOS."
 
   spec.description  = "Segmented control that is very customizable and can take any shape and size."
